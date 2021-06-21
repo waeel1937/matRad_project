@@ -18,25 +18,13 @@ script:
 
 
 depoly : 
-	provider : pages 
-	skip-cleanup : true 
-	github-token : $GITHUB_TOKEN
+ provider : pages 
+ skip-cleanup : true 
+ github-token : $GITHUB_TOKEN
 
 
-on : 
-		branch: gh-pages
-
-
-
-
-before_install : 
-
-
-before_script : 
+ on : 
+ branch: gh-pages
 
 
 
-after_success:  
-after_failuere : 
-
-after_script : 
