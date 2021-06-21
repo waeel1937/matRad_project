@@ -1,0 +1,42 @@
+
+
+
+language : node_js 
+node_js : 
+- 11.6.0 
+cache  : npm
+
+
+
+
+install : 
+- yarn install
+
+script: 
+- yarn test
+- yarn run build 
+
+
+depoly : 
+	provider : pages 
+	skip-cleanup : true 
+	github-token : $GITHUB_TOKEN
+
+
+on : 
+		branch: gh-pages
+
+
+
+
+before_install : 
+
+
+before_script : 
+
+
+
+after_success:  
+after_failuere : 
+
+after_script : 
