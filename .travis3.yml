@@ -1,0 +1,9 @@
+
+
+
+
+
+${Runner} ${Switches} "cd('${TESTDIR}'); unitTest" > ../runtests.log #2> ../runtests.err put stdout to log, but let it print error messages
+${Runner} ${Switches} %matrad_rc
+"cd('${TESTDIR}');   %matrad initialisieren 
+ run_units> ../runtests.log #2> ../runtests.err put stdout to log, but let it print error messages
